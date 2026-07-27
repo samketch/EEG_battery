@@ -69,6 +69,7 @@ python-gitlab @ file:///home/conda/feedstock_root/build_artifacts/python-gitlab_
 pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1612179539967/work
 pywin32==301
 pyWinhook @ file:///D:/bld/pywinhook_1625093294233/work
+pylsl==1.16.2
 PyYAML==5.4.1
 pyzmq @ file:///D:/bld/pyzmq_1628233078981/work
 questplus==2019.4

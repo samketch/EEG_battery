@@ -1,22 +1,31 @@
-"""Movie-watching task: fixation crosses and sequential clip playback.
+"""Movie-watching task: fixation crosses, sequential clip playback, and an
+Experience Sampling Questionnaire (ESQ) after each clip.
 
-Once run_movie_task() starts, the participant provides no input of any
-kind. The only key handled is Escape, which lets the experimenter abort
-the session cleanly (e.g. to handle an interrupted session) -- it is not
-a task response and is not logged as one.
+Once run_movie_task() starts, the only participant input is answering the
+ESQ questions after each clip via its 1-10 rating scale; no input is
+required during fixation or movie playback. Escape lets the experimenter
+abort the session cleanly during fixation/playback -- see ESQ.run_esq for
+why the same abort check isn't used during the questionnaire itself.
+
+EEG trigger markers are sent to NIC2 (via LSL) for four events per clip:
+movie_start, movie_end, esq_start, esq_end. The trigger_sender passed in
+must already be connected -- see mainscript.py, where it's connected early
+(before intro screens) since NIC2 needs the LSL outlet to exist before its
+recording starts. If it's not reachable, a warning is printed once and the
+task continues without triggers.
 """
 import csv
 import os
 from datetime import datetime
-import socket
-import time
-
 
 import psychopy
 psychopy.prefs.hardware["audioLib"] = ["sounddevice", "pyo", "pygame"]
 
 from psychopy import core, event, visual
 from psychopy.constants import FINISHED
+
+from taskScripts import ESQ
+from taskScripts.EEG_triggers import NicTriggerSender
 
 MOVIE_SIZE = (1920, 1080)
 
@@ -62,8 +71,7 @@ class MovieLogger:
         "timestamp_iso", "time_experiment_seconds",
     ]
 
-    def __init__(self, data_dir, participant_id, seed):
-        session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+    def __init__(self, data_dir, participant_id, session_id, seed):
         participant_dir = os.path.join(data_dir, participant_id)
         os.makedirs(participant_dir, exist_ok=True)
 
@@ -117,48 +125,28 @@ class MovieLogger:
         self._events_file.close()
 
 
-class NicTriggerSender:
-
-    def __init__(self, host="127.0.0.1", port=1234):
-        self.host = host
-        self.port = port
-        self.sock = None
-
-    def connect(self):
-        """Establishes connection to local NIC2 instance."""
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.connect((self.host, self.port))
-
-    def send_trigger(self, code: int):
-        """Sends an instantaneous trigger marker."""
-        if not self.sock:
-            raise RuntimeError("Socket not connected. Call connect() first.")
-        message = f"<TRIGGER>{code}</TRIGGER>"
-        self.sock.sendall(message.encode())
-
-    def send_timed_trigger(self, code: int, duration_ms: int):
-        """Sends a trigger, holds it, then sends a 0 clear code."""
-        self.send_trigger(code)
-        time.sleep(duration_ms / 1000.0)
-        self.send_trigger(0)  # Reset trigger state in NIC2
-
-    def close(self):
-        """Closes the socket connection safely."""
-        if self.sock:
-            self.sock.close()
-
-
-
 def run_movie_task(win, participant_id, seed, movie_filenames, movie_dir, data_dir,
-                    pre_fixation_sec, inter_fixation_sec, condition=None):
-    """Plays each clip in movie_filenames (already in presentation order).
+                    pre_fixation_sec, inter_fixation_sec, esq_questions, esq_instructions,
+                    trigger_sender, condition=None):
+    """Plays each clip in movie_filenames (already in presentation order),
+    followed immediately by an ESQ block after each clip.
 
     Each clip is preceded by a fixation cross: `pre_fixation_sec` before the
-    first clip, `inter_fixation_sec` before every clip after that. Onset is
-    logged at the screen refresh that first displays the clip; offset is
-    logged at the refresh where MovieStim reports playback finished.
+    first clip, `inter_fixation_sec` before every clip after that. Movie
+    onset is logged at the screen refresh that first displays the clip;
+    offset is logged at the refresh where MovieStim reports playback
+    finished. `esq_questions`/`esq_instructions` come from ESQ.load_questions()/
+    load_instructions(), loaded once up front so a bad ESQ file fails fast.
+    `trigger_sender` is an already-connected EEG_triggers.NicTriggerSender;
+    its lifecycle (connect/close) is owned by the caller.
+
+    Returns the path to the movie_log.csv this session just wrote, for any
+    post-processing keyed on it (e.g. check_easy_markers.py).
     """
-    logger = MovieLogger(data_dir, participant_id, seed)
+    session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+    logger = MovieLogger(data_dir, participant_id, session_id, seed)
+    esq_logger = ESQ.ESQLogger(data_dir, participant_id, session_id, seed)
+
     experiment_start = core.getTime()  # PsychoPy's monotonic clock reference
     cross = visual.TextStim(win, text="+", color="black", height=60, units="pix")
 
@@ -176,9 +164,11 @@ def run_movie_task(win, participant_id, seed, movie_filenames, movie_dir, data_d
             except Exception as exc:
                 raise RuntimeError("Failed to load movie '{}': {}".format(movie_filename, exc)) from exc
 
-            # Onset: timestamp the screen refresh that first shows the clip.
+            # Onset: timestamp the screen refresh that first shows the clip,
+            # then fire the trigger immediately after so it doesn't delay the flip.
             mov.draw()
             onset_flip_time = win.flip()
+            trigger_sender.send_trigger(NicTriggerSender.MOVIE_START)
             onset_exp_time = onset_flip_time - experiment_start
             onset_iso = _now_iso()
             logger.log_event(participant_id, movie_filename, order_index, "movie_start", onset_exp_time)
@@ -197,6 +187,7 @@ def run_movie_task(win, participant_id, seed, movie_filenames, movie_dir, data_d
             # Offset: timestamp of the last refresh drawn before FINISHED was
             # observed. True offset precision is bounded by one frame
             # duration, since status is only checked once per frame.
+            trigger_sender.send_trigger(NicTriggerSender.MOVIE_END)
             offset_exp_time = last_flip_time - experiment_start
             offset_iso = _now_iso()
             logger.log_event(participant_id, movie_filename, order_index, "movie_end", offset_exp_time)
@@ -214,5 +205,20 @@ def run_movie_task(win, participant_id, seed, movie_filenames, movie_dir, data_d
                 "end_time_experiment_seconds": "{:.6f}".format(offset_exp_time),
                 "duration_seconds": "{:.6f}".format(offset_exp_time - onset_exp_time),
             })
+
+            # ESQ: once per clip, immediately after it ends. esq_start/esq_end
+            # are logged into the same movie_events.csv as movie_start/movie_end
+            # (same schema fits) so check_easy_markers.py can cross-reference
+            # all four trigger types per clip, not just the movie ones.
+            movie_id = os.path.splitext(movie_filename)[0]
+            trigger_sender.send_trigger(NicTriggerSender.ESQ_START)
+            logger.log_event(participant_id, movie_filename, order_index, "esq_start", core.getTime() - experiment_start)
+            ESQ.show_instructions(win, esq_instructions)
+            ESQ.run_esq(win, participant_id, movie_id, esq_questions, esq_logger, experiment_start)
+            trigger_sender.send_trigger(NicTriggerSender.ESQ_END)
+            logger.log_event(participant_id, movie_filename, order_index, "esq_end", core.getTime() - experiment_start)
     finally:
+        esq_logger.close()
         logger.close()
+
+    return logger.summary_path

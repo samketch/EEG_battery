@@ -1,0 +1,8 @@
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+ESQ,2.043249600013951,,Distracting_start,,Experience Sampling Questions,1,TEST001,,,Movie Task-test_movie
+ESQ,0.9082998000085354,,Detailed_start,,Experience Sampling Questions,1,TEST001,,,Movie Task-test_movie
+ESQ,1.1592808999994304,,Images_start,,Experience Sampling Questions,1,TEST001,,,Movie Task-test_movie
+ESQ,10.169933099998161,,Images_response,5.100000000000001,Experience Sampling Questions,1,TEST001,,Marker Started at 3,Movie Task-test_movie
+ESQ,10.181862700002966,,Deliberate_start,,Experience Sampling Questions,1,TEST001,,,Movie Task-test_movie
+ESQ,13.650521300005494,,Deliberate_response,6.400000000000006,Experience Sampling Questions,1,TEST001,,Marker Started at 8,Movie Task-test_movie
+ESQ,13.658762500010198,,Absorption_start,,Experience Sampling Questions,1,TEST001,,,Movie Task-test_movie
