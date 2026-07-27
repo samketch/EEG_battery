@@ -12,6 +12,7 @@ import sys
 
 from psychopy import core, event, gui, visual
 
+
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 os.chdir(SCRIPT_DIR)
 if SCRIPT_DIR not in sys.path:
