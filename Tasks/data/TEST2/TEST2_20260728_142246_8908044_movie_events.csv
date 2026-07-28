@@ -1,0 +1,13 @@
+participant_id,movie_filename,presentation_order,event,timestamp_iso,time_experiment_seconds
+TEST2,shawshank.mp4,1,movie_start,2026-07-28T14:22:54.160,7.510677
+TEST2,shawshank.mp4,1,movie_end,2026-07-28T14:28:54.077,367.427353
+TEST2,shawshank.mp4,1,esq_start,2026-07-28T14:28:54.079,367.429878
+TEST2,shawshank.mp4,1,esq_end,2026-07-28T14:30:04.771,438.120901
+TEST2,prestige.mp4,2,movie_start,2026-07-28T14:30:08.602,441.952720
+TEST2,prestige.mp4,2,movie_end,2026-07-28T14:36:08.677,802.028006
+TEST2,prestige.mp4,2,esq_start,2026-07-28T14:36:08.681,802.031627
+TEST2,prestige.mp4,2,esq_end,2026-07-28T14:36:37.287,830.638017
+TEST2,pulpFiction.mp4,3,movie_start,2026-07-28T14:36:40.938,834.288344
+TEST2,pulpFiction.mp4,3,movie_end,2026-07-28T14:42:41.015,1194.364584
+TEST2,pulpFiction.mp4,3,esq_start,2026-07-28T14:42:41.023,1194.373647
+TEST2,pulpFiction.mp4,3,esq_end,2026-07-28T14:43:05.435,1218.785308

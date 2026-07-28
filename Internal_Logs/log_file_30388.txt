@@ -1,0 +1,4 @@
+pygame 2.6.1 (SDL 2.28.4, Python 3.6.13)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+*** TEST_MODE is True: 3-clip subset, windowed, short fixations. ***
+*** Set TEST_MODE = False in mainscript.py before any real session. ***

@@ -1,0 +1,97 @@
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+ESQ,403.76720289999867,,Images_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,408.7975282999996,,Images_response,8.0,Experience Sampling Questions,1,TEST2,,Marker Started at 8,Movie Task-shawshank
+ESQ,408.80002019999847,,Future_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,410.88578699999925,,Future_response,2.4000000000000004,Experience Sampling Questions,1,TEST2,,Marker Started at 2,Movie Task-shawshank
+ESQ,410.88818979999996,,Deliberate_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,412.46343779999916,,Deliberate_response,6.0,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-shawshank
+ESQ,412.4658499999987,,Detailed_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,414.9147280999987,,Detailed_response,7.100000000000003,Experience Sampling Questions,1,TEST2,,Marker Started at 8,Movie Task-shawshank
+ESQ,414.91851189999943,,Intrusive_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,416.4344764999987,,Intrusive_response,10.0,Experience Sampling Questions,1,TEST2,,Marker Started at 10,Movie Task-shawshank
+ESQ,416.43616419999853,,Knowledge_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,419.68602009999995,,Knowledge_response,4.800000000000003,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-shawshank
+ESQ,419.6874567999985,,Words_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,420.87311020000016,,Words_response,10.0,Experience Sampling Questions,1,TEST2,,Marker Started at 10,Movie Task-shawshank
+ESQ,420.8743016999997,,Self_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,422.5217931999996,,Self_response,8.0,Experience Sampling Questions,1,TEST2,,Marker Started at 8,Movie Task-shawshank
+ESQ,422.5226012999992,,Problem_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,424.9755910999993,,Problem_response,4.200000000000001,Experience Sampling Questions,1,TEST2,,Marker Started at 3,Movie Task-shawshank
+ESQ,424.9765770999984,,Other_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,426.99310650000007,,Other_response,9.999999999999996,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-shawshank
+ESQ,426.9988455999992,,Absorption_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,429.64473519999956,,Absorption_response,7.300000000000006,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-shawshank
+ESQ,429.6482313999986,,Sounds_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,431.5295814000001,,Sounds_response,3.100000000000001,Experience Sampling Questions,1,TEST2,,Marker Started at 2,Movie Task-shawshank
+ESQ,431.5316050000001,,Distracting_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,432.6005556,,Distracting_response,9.0,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-shawshank
+ESQ,432.60272239999904,,Emotion_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,434.18179640000017,,Emotion_response,5.0000000000000036,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-shawshank
+ESQ,434.1849100999989,,Focus_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,435.9865030000001,,Focus_response,8.0,Experience Sampling Questions,1,TEST2,,Marker Started at 8,Movie Task-shawshank
+ESQ,435.98899530000017,,Past_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-shawshank
+ESQ,438.1185590999994,,Past_response,7.400000000000006,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-shawshank
+ESQ,804.9851615999996,,Self_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,807.4145675999989,,Self_response,7.0,Experience Sampling Questions,1,TEST2,,Marker Started at 7,Movie Task-prestige
+ESQ,807.4164739999997,,Absorption_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,809.9515264000001,,Absorption_response,2.0,Experience Sampling Questions,1,TEST2,,Marker Started at 2,Movie Task-prestige
+ESQ,809.9541020999986,,Emotion_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,811.3198414999988,,Emotion_response,4.9,Experience Sampling Questions,1,TEST2,,Marker Started at 4,Movie Task-prestige
+ESQ,811.3233095999985,,Detailed_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,812.6539228000001,,Detailed_response,9.0,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-prestige
+ESQ,812.6566152999985,,Intrusive_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,813.8262524000002,,Intrusive_response,3.0,Experience Sampling Questions,1,TEST2,,Marker Started at 3,Movie Task-prestige
+ESQ,813.8291276999989,,Words_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,814.9598454999996,,Words_response,4.0,Experience Sampling Questions,1,TEST2,,Marker Started at 4,Movie Task-prestige
+ESQ,814.9622569999992,,Sounds_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,816.8428945999985,,Sounds_response,7.200000000000006,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-prestige
+ESQ,816.8457892999995,,Distracting_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,819.1927430999986,,Distracting_response,6.100000000000014,Experience Sampling Questions,1,TEST2,,Marker Started at 10,Movie Task-prestige
+ESQ,819.1955357999996,,Deliberate_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,821.0276803999986,,Deliberate_response,7.799999999999994,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-prestige
+ESQ,821.0290359999999,,Images_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,822.8795292999985,,Images_response,4.100000000000007,Experience Sampling Questions,1,TEST2,,Marker Started at 7,Movie Task-prestige
+ESQ,822.8819559999993,,Knowledge_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,824.5185856999997,,Knowledge_response,6.299999999999995,Experience Sampling Questions,1,TEST2,,Marker Started at 5,Movie Task-prestige
+ESQ,824.521287399999,,Future_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,825.8298047999997,,Future_response,3.0,Experience Sampling Questions,1,TEST2,,Marker Started at 3,Movie Task-prestige
+ESQ,825.8321350999995,,Past_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,826.9521389000001,,Past_response,3.0,Experience Sampling Questions,1,TEST2,,Marker Started at 3,Movie Task-prestige
+ESQ,826.954377,,Other_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,828.2489390999999,,Other_response,6.0,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-prestige
+ESQ,828.2520836999993,,Problem_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,829.4997528999993,,Problem_response,5.0,Experience Sampling Questions,1,TEST2,,Marker Started at 5,Movie Task-prestige
+ESQ,829.5022820999984,,Focus_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-prestige
+ESQ,830.6358524999996,,Focus_response,6.0,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-prestige
+ESQ,1197.6604033999993,,Self_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1199.9679320999985,,Self_response,4.0,Experience Sampling Questions,1,TEST2,,Marker Started at 4,Movie Task-pulpFiction
+ESQ,1199.9701867999993,,Other_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1201.8350077999985,,Other_response,10.0,Experience Sampling Questions,1,TEST2,,Marker Started at 10,Movie Task-pulpFiction
+ESQ,1201.8378298999996,,Words_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1203.5536468999999,,Words_response,9.0,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-pulpFiction
+ESQ,1203.5559760999986,,Images_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1204.9219393999992,,Images_response,6.0,Experience Sampling Questions,1,TEST2,,Marker Started at 6,Movie Task-pulpFiction
+ESQ,1204.9242118000002,,Focus_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1206.205007999999,,Focus_response,9.0,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-pulpFiction
+ESQ,1206.2075925999998,,Absorption_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1207.3398937000002,,Absorption_response,2.0,Experience Sampling Questions,1,TEST2,,Marker Started at 2,Movie Task-pulpFiction
+ESQ,1207.342228899999,,Problem_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1208.628794799999,,Problem_response,7.0,Experience Sampling Questions,1,TEST2,,Marker Started at 7,Movie Task-pulpFiction
+ESQ,1208.6306728,,Intrusive_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1209.6749320999988,,Intrusive_response,5.0,Experience Sampling Questions,1,TEST2,,Marker Started at 5,Movie Task-pulpFiction
+ESQ,1209.6777795999988,,Knowledge_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1210.7059205999994,,Knowledge_response,9.0,Experience Sampling Questions,1,TEST2,,Marker Started at 9,Movie Task-pulpFiction
+ESQ,1210.7085786999996,,Future_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1211.7769436999988,,Future_response,7.0,Experience Sampling Questions,1,TEST2,,Marker Started at 7,Movie Task-pulpFiction
+ESQ,1211.7804428,,Distracting_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1212.9627446999984,,Distracting_response,5.0,Experience Sampling Questions,1,TEST2,,Marker Started at 5,Movie Task-pulpFiction
+ESQ,1212.9659893999997,,Detailed_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1214.1459213999988,,Detailed_response,3.0,Experience Sampling Questions,1,TEST2,,Marker Started at 3,Movie Task-pulpFiction
+ESQ,1214.148622499999,,Past_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1215.3180340999988,,Past_response,4.0,Experience Sampling Questions,1,TEST2,,Marker Started at 4,Movie Task-pulpFiction
+ESQ,1215.321559,,Sounds_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1216.4810539999999,,Sounds_response,3.0,Experience Sampling Questions,1,TEST2,,Marker Started at 3,Movie Task-pulpFiction
+ESQ,1216.4839957999993,,Emotion_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1217.6140029999988,,Emotion_response,5.0,Experience Sampling Questions,1,TEST2,,Marker Started at 5,Movie Task-pulpFiction
+ESQ,1217.6167090999988,,Deliberate_start,,Experience Sampling Questions,1,TEST2,,,Movie Task-pulpFiction
+ESQ,1218.7830219999996,,Deliberate_response,2.0,Experience Sampling Questions,1,TEST2,,Marker Started at 2,Movie Task-pulpFiction

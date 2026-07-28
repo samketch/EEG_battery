@@ -1,0 +1,4 @@
+participant_id,movie_id,movie_filename,presentation_order,condition,random_seed,start_timestamp_iso,end_timestamp_iso,start_time_experiment_seconds,end_time_experiment_seconds,duration_seconds,easy_file_start_index,easy_file_end_index
+TEST2,shawshank,shawshank.mp4,1,,8908044,2026-07-28T14:22:54.160,2026-07-28T14:28:54.077,7.510677,367.427353,359.916676,8006,187958
+TEST2,prestige,prestige.mp4,2,,8908044,2026-07-28T14:30:08.602,2026-07-28T14:36:08.677,441.952720,802.028006,360.075287,225229,405265
+TEST2,pulpFiction,pulpFiction.mp4,3,,8908044,2026-07-28T14:36:40.938,2026-07-28T14:42:41.015,834.288344,1194.364584,360.076240,421395,601431

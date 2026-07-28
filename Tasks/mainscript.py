@@ -58,7 +58,7 @@ PRODUCTION_MOVIE_FILENAMES = [
 ]
 # Smallest/fastest 3 of the real clips (by file size), for quick iteration
 # without waiting through all 8.
-TEST_MOVIE_FILENAMES = ["c4.mp4", "shawshank.mp4", "12_years.mp4"]
+TEST_MOVIE_FILENAMES = ["prestige.mp4", "shawshank.mp4", "pulpFiction.mp4"]
 
 PRODUCTION_PRE_FIRST_FIXATION_SEC = 30.0
 PRODUCTION_BETWEEN_CLIPS_FIXATION_SEC = 10.0
@@ -165,7 +165,7 @@ def main():
     win = None
     movie_log_path = None
     try:
-        win = visual.Window(size=(1440, 960), color="white", fullscr=not TEST_MODE, units="pix")
+        win = visual.Window(size=(1440, 960), color="white", fullscr=True, screen=1, units="pix")
 
         show_text_screen(
             win,

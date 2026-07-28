@@ -1,0 +1,37 @@
+pygame 2.6.1 (SDL 2.28.4, Python 3.6.13)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+*** TEST_MODE is True: 3-clip subset, windowed, short fixations. ***
+*** Set TEST_MODE = False in mainscript.py before any real session. ***
+LSL marker stream 'MovieTaskTriggers' is live.
+36.8043 	WARNING 	Monitor specification not found. Creating a temporary one...
+36.8075 	WARNING 	User requested fullscreen with size [1440  960], but screen is actually [2560, 1440]. Using actual size
+46.7077 	WARNING 	The 'psychtoolbox' library cannot be loaded but is required for audio capture (use `pip install psychtoolbox` to get it). Microphone recording will be unavailable this session. Note that opening a microphone stream will raise an error.
+46.7088 	WARNING 	Speech-to-text recognition module not available (use command `pip install SpeechRecognition` to get it. Transcription will be unavailable.
+46.9293 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'pyo', 'pygame'] (in that order).
+271.7951 	WARNING 	222.5137223999991: Video catchup needed, advancing self._nextFrameT from 222.31999999999005 to 222.35999999999004
+271.7951 	WARNING 	222.51375229999758: Video catchup needed, advancing self._nextFrameT from 222.35999999999004 to 222.39999999999003
+271.7951 	WARNING 	222.51375909999842: Video catchup needed, advancing self._nextFrameT from 222.39999999999003 to 222.43999999999002
+331.8190 	WARNING 	282.5375879999974: Video catchup needed, advancing self._nextFrameT from 282.3199999999968 to 282.35999999999683
+331.8190 	WARNING 	282.53760969999894: Video catchup needed, advancing self._nextFrameT from 282.35999999999683 to 282.39999999999685
+331.8190 	WARNING 	282.53761609999856: Video catchup needed, advancing self._nextFrameT from 282.39999999999685 to 282.43999999999687
+331.8190 	WARNING 	282.53762209999877: Video catchup needed, advancing self._nextFrameT from 282.43999999999687 to 282.4799999999969
+332.0464 	WARNING 	282.76498829999764: Video catchup needed, advancing self._nextFrameT from 282.55999999999693 to 282.59999999999695
+332.0464 	WARNING 	282.7650120999988: Video catchup needed, advancing self._nextFrameT from 282.59999999999695 to 282.639999999997
+332.0464 	WARNING 	282.7650188999978: Video catchup needed, advancing self._nextFrameT from 282.639999999997 to 282.679999999997
+332.0464 	WARNING 	Max reportNDroppedFrames reached, will not log any more dropped frames
+445.4709 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+511.8837 	WARNING 	28.16105509999943: Video catchup needed, advancing self._nextFrameT from 27.879999999999583 to 27.919999999999582
+511.8837 	WARNING 	28.161082999999053: Video catchup needed, advancing self._nextFrameT from 27.919999999999582 to 27.95999999999958
+511.8837 	WARNING 	28.16109189999952: Video catchup needed, advancing self._nextFrameT from 27.95999999999958 to 27.99999999999958
+511.8837 	WARNING 	28.161098099999435: Video catchup needed, advancing self._nextFrameT from 27.99999999999958 to 28.03999999999958
+511.8837 	WARNING 	28.161103999998886: Video catchup needed, advancing self._nextFrameT from 28.03999999999958 to 28.07999999999958
+511.8837 	WARNING 	28.16110959999969: Video catchup needed, advancing self._nextFrameT from 28.07999999999958 to 28.119999999999578
+846.7015 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+945.4359 	WARNING 	69.37294719999954: Video catchup needed, advancing self._nextFrameT from 69.23999999999963 to 69.27999999999963
+945.4360 	WARNING 	69.37299109999913: Video catchup needed, advancing self._nextFrameT from 69.27999999999963 to 69.31999999999964
+1239.3752 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+Found .easy file: C:\Users\THinC Lab.DESKTOP-TJDONQ9\Documents\GitHub\EEG_battery\Tasks\data\EEG_data\20260728142237_TEST2_EEGMovieBattery.easy
+Annotated C:\Users\THinC Lab.DESKTOP-TJDONQ9\Documents\GitHub\EEG_battery\Tasks\data\TEST2\TEST2_20260728_142246_8908044_movie_log.csv with easy_file_start_index / easy_file_end_index.
+Wrote C:\Users\THinC Lab.DESKTOP-TJDONQ9\Documents\GitHub\EEG_battery\Tasks\data\TEST2\clips\TEST2_order1_shawshank.easy (179953 rows, samples 8006-187958)
+Wrote C:\Users\THinC Lab.DESKTOP-TJDONQ9\Documents\GitHub\EEG_battery\Tasks\data\TEST2\clips\TEST2_order2_prestige.easy (180037 rows, samples 225229-405265)
+Wrote C:\Users\THinC Lab.DESKTOP-TJDONQ9\Documents\GitHub\EEG_battery\Tasks\data\TEST2\clips\TEST2_order3_pulpFiction.easy (180037 rows, samples 421395-601431)
